@@ -1,0 +1,897 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="color:Accent" content="#0080c3"/>
+
+<title>{PageTitle}</title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-png"/>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0;
+}
+.clear {
+    clear: both;
+    font-size: 0;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.text-right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.xxsmall {
+    font-size: 10px;
+}
+.xsmall {
+    font-size: 11px;
+}
+.small {
+    font-size: 12px;
+}
+.normal {
+    font-size: 14px;
+}
+.big {
+    font-size: 16px;
+}
+.black {
+    color: #000;
+}
+.strong {
+    font-weight: bold;
+}
+.float {
+    float: left;
+}
+.right {
+    float: right;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.absolute-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+body {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+    font-size: 12px;
+}
+a {
+    color: {color:Accent};
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.reverse {
+    text-decoration: underline;
+}
+a.reverse:hover {
+    text-decoration: none;
+}
+.no-ul {
+    text-decoration: none
+}
+.no-ul:hover {
+    text-decoration: underline !important
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+.posterousHeader {
+    left: -10px;
+    position: absolute;
+    top: 0;
+}
+
+.header {
+    background: {color:Accent};
+    color: #fff;
+    overflow: visible;
+    z-index: 10;
+    text-align: center;
+}
+.header_text, .header_text .content { height: 100px; }
+.header .content {
+    width: 500px;
+    margin: 0 auto;
+    padding-right: 100px;
+    position: relative;
+}
+
+h1,h2,.about-details,.date {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial,Helvetica,sans-serif;
+}
+.date {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: right;
+    line-height: 36px;
+}
+
+h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+h2 a {
+    color: {color:Accent};
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.post_body { margin-top: 15px; }
+
+h4 {
+    color: #555;
+}
+
+.about {
+    left: -50px;
+    margin: 28px auto 5px;
+    position: relative;
+    overflow: hidden;    
+    width: 500px;
+}
+
+.about-details {
+    line-height: 1.5em;
+    margin-left: 70px;
+    width: 430px;
+    overflow: hidden;
+    margin-top: -10px;
+}
+
+.about-details p {
+    color: #444;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+#posts {
+    float: left;
+    width: 680px;
+}
+
+
+.postunit {
+    padding: 20px 0px;
+    margin: 5px 0px;
+    position: relative;
+}
+
+.info-column {
+    color: #444;
+    float: left;
+    font-size: 14px;
+    text-align: right;
+    width: 180px;
+    margin-top: 1px;
+}
+
+.date {
+    margin: 5px 20px 0 0;
+}
+.date-day {
+    color: #444;
+    font-weight: bold;
+}
+
+.date a:hover {
+    color: {color:Accent};
+}
+
+.post {
+    float: right;
+    position: relative;
+    width: 500px;
+}
+
+.post p, .post div {
+    line-height: 1.5em;
+}
+
+p {
+    margin: 15px 0px;
+}
+.post ol { margin: 15px 0px 15px 20px;}
+.post ul { margin: 15px 0px 15px 15px;}
+
+.galleryLabel {
+    color: #676767;
+}
+
+
+.tagsbar {
+    font-size: 11px;
+    line-height: 14px;
+    color: #aaa;
+    margin-top: 15px
+}
+
+.infobar .location {
+    display: block !important;
+    font-size: 11px;
+    float: left;
+}
+
+.infobar .details {
+    float: right;
+    font-size: 10px;
+    margin-top: 1px;
+}
+
+.date-comments {
+    padding-left: 10px;
+}
+
+.infobar .posted,.infobar .comments-name {
+    color: {color:Accent};
+}
+
+.infobar a.timestamp,.infobar .comments-quantity {
+    color: #999;
+    font-size: 10px;
+}
+
+.comment-area {
+    clear: left;
+}
+
+.infobar .comment_list {
+    display: inline !important;
+}
+
+.comment,.commentunit {
+    color: #444;
+    margin-top: 5px;
+}
+
+.commentunit {
+    width: auto !important;
+}
+
+.commentname a {
+    text-decoration: none !important;
+}
+
+.commentname a:hover {
+    text-decoration: underline !important;
+}
+
+.comment h4 {
+    margin: 0 !important;
+}
+
+.posterousAddNewComment .commentunit {
+    margin-top: 20px;
+    border-bottom: none !important;
+}
+
+.comment ul.mini_commands {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: right;
+    top: 0;
+}
+
+.comment ul.mini_commands li {
+    margin: 0px 5px 0px 0px;
+}
+
+
+.comment_value label {
+    margin-right: 10px;
+}
+.comment_value br {
+    display: none;
+}
+
+.comment_value input[type='submit'] {
+    margin: 10px 0px;
+}
+
+.comment_none_yet_msg {
+    color: #888;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.infobar .details a {
+    text-decoration: none;
+}
+
+.infobar .details a:hover {
+    text-decoration: underline;
+}
+
+.location-map {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #eee;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.map {
+    float: left;
+    height: 150px;
+    width: 300px;
+}
+
+.location-details {
+    color: #676767;
+    float: right;
+    width: 175px
+}
+
+p.private-post {
+    margin: 10px 20px 0px 0px;
+}
+.private-post a.tooltip_link:hover span {
+    color: #555;
+    right: 0px; width: 110px;
+}
+
+.private-post a.tooltip_link:hover span b {
+    color: #555;
+}
+
+.search-section, .tag-section, .archive-section {
+    margin-left: 160px;
+    padding: 20px 20px 5px 20px;
+}
+.search-section h2, .tag-section h2, .archive-section h2 {
+    color: #444;
+    font-size: 16px;
+}
+
+.pagination {
+    color: #676767;
+    margin: 0 0 50px 180px;
+}
+
+.pagination span {
+    position: relative;
+    top: 2px;
+}
+
+.pagination a {
+    background: {color:Accent};
+    border: solid 1px {color:Accent};
+    color: #fff;
+    display: inline-block;
+    display: -moz-inline-box;
+    padding: 1px 6px;
+}
+
+.pagination a:hover {
+    background: #555;
+    border: solid 1px #555;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.pagination .disabled {
+    color: #676767;
+}
+
+.pagination .current {
+    color: #676767;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+
+#sidebar {
+    float: right;
+    width: 230px;
+    margin-top: 30px;
+}
+
+.sidebar-block {
+    margin-bottom: 30px;
+}
+
+h5 {
+    color: {color:Accent};
+    font-size: 11px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.tags {
+    width: 230px;
+}
+
+.tag {
+    margin: 0;
+    padding-top: 7px;
+}
+
+#more-tags-listing ul {
+    margin: 0;
+}
+
+.tag li,#more-tags-listing li,.taglist li, div.archives {
+    color: {color:Accent};
+    font-size: 10px;
+    list-style: none;
+    margin: 0;
+    vertical-align: top;
+}
+
+.taglist ul {
+    margin: 0 !important;
+}
+
+.tag li a,#more-tags-listing li a,.taglist li a, div.archives a {
+    color: #818181;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+
+.tag li a:hover,#more-tags-listing li a:hover,.taglist li a:hover, div.archvies a:hover {
+    text-decoration: underline;
+}
+
+a.more-tags {
+    color: {color:Accent} !important;
+    font-size: 10px !important;
+    text-decoration: none;
+}
+
+a.more-tags:hover {
+    text-decoration: underline;
+}
+
+li.tag_item_selected {
+    color: #333;
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+
+div.archive_list {padding-top:7px;}
+div.archives div.inner {margin-left:10px;}
+
+.search {
+    background: url(/themes/search-light.gif) no-repeat 3px 2px #fff;
+    border: solid 1px #e5e5e5;
+    color: #aaa;
+    font-size: 11px;
+    margin-bottom: 2px;
+    padding: 5px 7px 5px 20px;
+    width: 153px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.search:focus {
+    color: #333;
+}
+
+
+.contributors, .fans {
+    margin: 10px 0;
+}
+ul.contribs li, ul.contribs li a, ul.fans li, ul.fans li a {
+    font-size: 11px;
+    color: #666;
+    list-style: none;
+}
+ul.contribs li img, ul.fans li img {
+    vertical-align: middle;
+}
+
+#subscribe_div {
+    margin-bottom: 3px;
+}
+
+.subscribe-link {
+    color: #666;
+    font-size: 11px;
+    padding: 2px 0px 0px 20px;
+    line-height: 20px; 
+    position: relative;
+    top: -2px;
+
+}
+.subscribe-site {
+    background: url(/images/favicon.png) no-repeat -1px -1px;
+  padding: 2px 0px 0px 20px;
+    height: 20px;
+    margin: 3px 0px;    
+    font-size: 11px;
+    color: #666;
+}
+.subscribe-site div a { color: #666;}
+.subscribe-rss {
+    background: url(/images/feed-icon-14x14.png) no-repeat -1px;
+    height: 16px;
+    margin: 3px 0px;    
+    padding-bottom: 3px;
+}
+.editbox {
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    left: 180px;
+}
+.postunit:hover .editbox {
+    visibility: visible;
+}
+.posted_by {
+    font-size: 10px;
+    margin: 5px 0px 20px 0px;
+    color: #888;
+}
+.posted_by a {
+    color: #999;
+}
+
+.posterousPrivateBox a { color: #fff;}
+.metricLabel { font-size: 10px; color: #aaa; }
+.metricValue { font-size: 10px; color: #444; font-weight: bold; }
+div.profile_ajax_reply { padding-left: 20px; }
+
+ul.navigation { margin: 20px auto; width: 500px; position: relative; left: -50px; }
+ul.navigation li { list-style: none; display: inline; padding-right: 20px; }
+ul.navigation li a { font-size: 17px; }
+ul.navigation li a.current { color: #444; font-weight: bold; }
+
+.sharing { padding: 5px 5px 5px 0; }
+.posterous_tweet_button, .posterous_fb_like_widget { float: left; display: inline; margin-right: 15px; }
+
+.p_responses { margin-top: 15px; }
+</style>
+</head>
+
+<body>
+    <div class="header {block:HeaderImage}{Else}header_text{/block:HeaderImage}" style="z-index: 10 !important;">
+        <div class="content">
+           {block:PosterousBar direction="right" translucent="true"}{/block:PosterousBar}        
+            {block:HeaderImage}
+                <div class="content" style="padding-bottom: 20px; padding-top: 30px;">
+                    <a href="{SiteURL}"><img src="{HeaderImageURL-500}" alt="{Title}"></a>
+                </div>
+            {Else}
+                <h1 style="z-index: 11 !important;; position: absolute; bottom: -5px; right: 110px; text-align: right;"><a href="{SiteURL}">{Title}</a></h1>
+                <h1 style="z-index: 1 !important; position: absolute; bottom: -6px; right: 110px; text-align: right;"><a href="{SiteURL}" style="color: #aaa">{Title}</a></h1>
+            {/block:HeaderImage}            
+        </div>
+    </div><!-- /.header -->
+
+{block:HasPages}
+  <ul class="navigation">
+   {block:Pages}
+    <li><a href="{URL}" class="{Current}">{Label}</a></li>
+   {/block:Pages}
+  </ul>
+{/block:HasPages}
+<div class="content">
+    <div class="about">
+        <a href="{ProfileLink}"><img src="{PortraitURL-70}" width="50" height="50" alt="" class="left" /></a>
+        <div class="about-details">
+            <p><a href="{ProfileLink}">{OwnerName}</a>&nbsp;&nbsp;<span style="color: #ccc">//</span>&nbsp;&nbsp;{Profile}</p>
+        </div>
+    </div><!-- /.about -->
+</div><!-- /.content -->
+
+<div class="container">
+    <div id="posts">
+        
+        {block:SearchPage}
+            <div class="search-section">
+                    <h2>
+                        {block:SearchResultOne}
+                            One result found searching for
+                        {/block:SearchResultOne}
+                        
+                        {block:SearchResultMany}
+                            {SearchResultCount} results found searching for
+                        {/block:SearchResultMany}
+                        
+                        {block:SearchResultNone}
+                            No results found searching for
+                        {/block:SearchResultNone}
+                    </h2>
+                    <form method='get'>
+                        <input type='hidden' name='sort' value="{SearchSort}"/>
+                        <input type='text' name='search' value='{SearchQuery}' class="searchbox searchbox_large" id="searchbox"/>
+                        <input type='submit' value='Search' class="searchbox_button" id="searchbox_button"/>
+                        &nbsp;&nbsp;<a href="{CurrentURL}" class="xsmall">clear</a>
+                    </form>
+                
+                    <ul class="searchsort" style="color: #999; font-size: 10px;">
+                            <li style="margin-left: 0px;">Sort by</li>
+                            <li>{block:SearchSortBestmatch}<b>Best match</b>{Else}<a href="{CurrentURL}?search={SearchQuery}&sort=bestmatch">Best match</a>{/block:SearchSortBestmatch}</li>
+                            <li>{block:SearchSortRecent}<b>Most recent</b>{Else}<a href="{CurrentURL}?search={SearchQuery}&sort=recent">Most recent</a>{/block:SearchSortRecent}</li>
+                            <li>{block:SearchSortInteresting}<b>Most interesting</b>{Else}<a href="{CurrentURL}?search={SearchQuery}&sort=interesting">Most interesting</a>{/block:SearchSortInteresting}</li>
+                    </ul>
+                    <br/>
+                    <a href="{PosterousURL}/explore/?search={SearchQuery}" style="font-size: 10px;">Search all of posterous for <b>{SearchQuery}</b> &raquo;</a>
+
+            </div>
+            <br style="clear: left;"/>
+        {/block:SearchPage}    
+
+        {block:Tag}
+            <div class="tag-section">                
+                 Filed under   
+                 <h2 style="margin-top: 0px; color: #111">{Tag}</h2>  
+                 <a href="{GlobalTagURL}" id="see_all_tags">  
+                   See all posts on posterous with this tag »  
+                 </a>
+            </div>
+        {/block:Tag}
+        
+        {block:ArchiveList}
+        <div class="archive-section">                
+      Archive for
+      <h2 style="margin-top: 0px; color: #111">{ArchiveDate}</h2>
+    </div>
+    {/block:ArchiveList}
+                
+        {block:Posts}
+            <div id="postunit_{PostID}" class="postunit">
+                {block:EditBox}
+                        <div class="editbox">{EditBoxContents}&nbsp;</div>
+                {/block:EditBox}
+
+                <div id="post_control_{PostID}"></div>
+                <div class="info-column">
+                  {block:ShowOrList}
+                    <div class="date">{block:NewDayDate}<a href="{Permalink}"><span class="date-day">{ShortMonth} {DayOfMonth}</a> / {12Hour}:{Minutes}{AmPm}{/block:NewDayDate}</a></div>
+                    {/block:ShowOrList}
+                        {block:Private}
+                            <p class="private-post">
+                                <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" width='12' height='12' alt='Private'/>
+                                    <span>
+                                        <b>Private Post</b><br/>
+                                        This post has a secret URL and not linked on your public blog. Send the secret URL to share it with anyone.
+                                    </span>
+                                </a>
+                            </p>
+                        {/block:Private}
+    
+                </div>
+                <div id="post_{PostID}" class="post">
+                        {block:Title}<h2 id="posttitle_{PostID}"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+                        {block:SMS}
+                            <div class="sms_notice">Posted from my mobile phone (SMS)</div>
+                        {/block:SMS}
+
+                        {block:Author}
+                            <div class="posted_by">
+                                {block:AuthorUser}
+                                    by <a href="{AuthorURL}">{AuthorName}</a>
+
+                                {/block:AuthorUser}
+                                {block:AuthorEmail}
+                                    Posted by email&nbsp;
+                                {/block:AuthorEmail}
+                            </div>
+                        {/block:Author}
+
+                        <div class='post_body'>
+                        {Body}
+                        </div>
+
+                        {block:Sharing}
+                          <div class="sharing clearfix">
+                            {block:Tweet /}
+                            <div class="posterous_fb_like_widget">{block:FbLike /}</div>
+                          </div>
+                        {/block:Sharing}
+
+                        {block:List}
+                            {block:TagList}
+                              <div class="tagsbar">
+                                Filed under &nbsp;//&nbsp;
+                                  {block:TagListing}
+                                    <a href="{TagLink}" style="color: #676767">{TagName}</a>&nbsp;&nbsp;
+                                  {/block:TagListing}
+                              </div>     
+                            {/block:TagList}
+                        {/block:List}
+
+
+                        {block:PostLocations}
+                            <p>
+                                <div id="location_collapsed_{PostID}" class="location">Posted from <a href="#" id="post_location_expander_{PostID}">{LocationsSummary}</a></div>
+                                <div class="location-map" style="display: none;" id="post_location_expanded_{PostID}">
+                                    <div class="map">
+                                    {MapIframe}
+                                    </div>
+                                    <div class="location-details">
+                                      <b>Posted from</b><br/>
+                                      {block:PostLocation uniq_by='summary'}
+                                          {LocationSummary}<br/>
+                                      {/block:PostLocation}
+                                      <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                {block:ShowOnClick action_id='post_location_expander_{PostID}' hidden_div='post_location_expanded_{PostID}' to_hide_id='location_collapsed_{PostID}'/}
+                            </p>
+                        {/block:PostLocations}
+
+
+                        {block:Responses /}      
+
+                </div><!-- /.post -->
+                <div class="clear"></div>
+            </div><!-- /.postunit -->
+        {/block:Posts}
+    
+    {block:Pagination/}
+    
+    </div><!-- /#posts -->
+
+    {block:ShowSidebar}
+        <div id="sidebar">
+
+                <p style="font-size: 14px;"><a href="{BlogURL}">&laquo;&nbsp;Back to blog</a></p>
+                <div class="sidebar-block" style="margin-top: 30px;">
+                    <div><span class="metricLabel">Viewed </span><span class="metricValue">{PostViews} times</span></div>
+
+        </div>
+    {/block:ShowSidebar}
+        
+    {block:ListSidebar}
+        <div id="sidebar">
+            {block:Claimed}
+                <div class="sidebar-block">
+                            <form method='get'>
+                                <input type='hidden' name='sort' value="{SearchSort}"/>
+                                <input type='text' name='search' value='{SearchQuery}' class="search" id="searchbox"/>
+                                <input type='submit' value='Search' class="searchbox_button" style="display:none;" id="searchbox_button"/>
+                            </form>
+                </div>                    
+                
+                {block:AutopostSites}
+                  <div class="sidebar-block">
+                      <h5>My Other Sites</h5>
+                      {ProfileExternalLinks}
+                  </div>
+                {/block:AutopostSites}
+
+                <div class="sidebar-block" style="margin-top:20px;">
+                    {block:Contributors}
+                        <div class="contributors">
+                            <h5>Contributors</h5>
+    
+                            <ul class="contribs">
+                                {block:Contributor}
+                                    <li>
+                                        <a href="{ContributorProfileLink}">
+                                            <img src="{ContributorPortraitURL-20}"
+                                                    width='16' height='16' class='profile_border' style="margin-right: 3px;"/>
+                                        </a>
+                                        <a href="{ContributorProfileLink}">
+                                            {ContributorName}
+                                        </a>
+                                    </li>
+                                {/block:Contributor}
+                            </ul>
+                        </div>
+                    {/block:Contributors}
+                </div>
+            {block:HasLinks}
+              {block:LinkCategories}
+              <div class="sidebar-block">
+                <h5>{Label}</h5>
+                <ul class="tag">
+                  {block:Links}
+                    <li><a href="{URL}">{Label}</a></li>
+                  {/block:Links}
+                </ul>
+              </div>
+              {/block:LinkCategories}
+            {/block:HasLinks}
+          
+                <div class="sidebar-block">
+                    {block:TagList}
+                        <div class="tags">
+                            <h5>Tags</h5>
+                            <ul class="tag">
+                                {block:TagListing collapsible='true' count='10' action_id='seemore_link'}
+                    
+                                    {block:TagListingMore}
+                                        <li style="font-size:0;"><a href="#" id="seemore_link" class="more-tags">View all {NumTags} tags&nbsp;&raquo;</a></li>
+                                    {/block:TagListingMore}
+                        
+                                    {block:TagItem}
+                                        <li><a href="{TagLink}">{TagName}</a> ({TagCount})</li>
+                                    {/block:TagItem}
+    
+                                    {block:TagItemSelected}
+                                        <li class="tag_item_selected"><strong>{TagName}</strong> ({TagCount})</li>
+                                    {/block:TagItemSelected}
+                                    
+                                {/block:TagListing}
+                            </ul>
+                        </div>
+                    {/block:TagList}
+                </div>
+                
+        <div class="sidebar-block">
+          {block:HasArchives}
+            <div class="archives">
+              <h5>Archive</h5>
+                <div class="archive_list">
+               {block:ArchiveYear}
+                  <div class="archive"><a href="#" id="{ArchiveYearId}">{ArchiveDateYear}</a> ({ArchiveYearCount})</div>
+                    <div id="{ArchiveMonthsId}" style="display:none;">
+                      <div>                      
+                        {block:Archive}                              
+                            <div class="inner"><a href="{ArchiveLink}">{ArchiveMonth}</a>  ({ArchiveCount})</div>
+                        {/block:Archive}
+                      </div>
+                    </div>
+              {/block:ArchiveYear}
+              </div>
+            </div>
+          {/block:HasArchives}
+          
+        </div>
+
+                <div class="sidebar-block">   
+          <h5>Get Updates</h5>
+                  <div class="subscribe-site">
+            {block:Subscription}{/block:Subscription}
+         </div>
+
+                    
+          {block:NotSearchOrTag}
+              <a href="{RSS}" class="subscribe-link subscribe-rss">Subscribe via RSS</a>
+          {/block:NotSearchOrTag}    
+      </div>
+
+                
+            {/block:Claimed}
+        </div><!-- /#sidebar -->
+    {/block:ListSidebar}
+    <div class="clear"></div>
+</div><!-- /.container -->
+</body>
+</html>
+​
